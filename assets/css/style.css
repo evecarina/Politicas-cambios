@@ -1,8 +1,10 @@
-/* Format document */
+/*##########################################################
+#################### Format document  ######################
+##########################################################*/
 body{
     margin: 0;
     padding: 0;
-    font-family:"sans-serif Regular" ;
+    font-family: 'Lato', sans-serif;
 }
 
 ul, li{
@@ -29,7 +31,8 @@ p{
     font-size: 19px;
 }
 
-.container
+
+.content_page
 {
     width: 100%;
     margin-right: auto;
@@ -43,60 +46,16 @@ p{
                         "main main";
 }
 
+/*##########################################################
+########### styles in first section HEAD ##################
+##########################################################*/
 
-.container .image-head-page{
-    grid-area: image-head-page;
-    text-align: center;
-}
-
-.container .title-container img {
-    width: 67.02px;
-    height: 82.49px;
-    position: relative;
-    top: 29px;
-}
-
-
-.container .image-head-page img {
-    width: 75%;
-    position: relative;
-    top: 30px;
-}
-
-.container main{
-    grid-area: main;
-}
-
-
-
-.container .title-container {
-    grid-area: title-container;
-    display: flex;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.container .title-container h1{
+.content_page .title-container h1{
     padding: 0 0 0 2rem;
-}
- 
-
-.gray-box_content p.blue-text-content{
-    color: #0072CE;
-    padding: 0px 45px;
-    position: relative;
-    top:10px;
-    text-align: center;
-}
-
-/* text colors */
-
-.container h1{
     font-size: 40px;
 }
 
-.container h2 {
-    font-size: 36px;
-}
+
 
 h1 .gray-text{
     color:#848688;
@@ -108,44 +67,49 @@ h1 .blue-text{
     font-weight: bold;
 }
 
-.text-default{
-    color: #575757;
+
+.content_page .title-container {
+    grid-area: title-container;
+    display: flex;
+}
+.content_page .title-container img {
+    width: 67.02px;
+    height: 82.49px;
+    position: relative;
+    top: 29px;
 }
 
-.text-white{
-    color: #ffffff;
+.content_page .image-head-page img {
+    width: 75%;
+    position: relative;
+    top: 30px;
 }
 
-.main-sections h2{
+
+.content_page .image-head-page{
+    grid-area: image-head-page;
+    text-align: center;
+}
+
+
+/*##########################################################
+########### END styles in first section HEAD ##############
+##########################################################*/
+
+
+/*##########################################################
+########### styles in  sections MAIN ##################
+##########################################################*/
+
+.content_page .main{
+    grid-area: main;
+}
+
+
+.content_page .main-sections h2 {
+    font-size: 36px;
     color: #0072CE;
 }
-
-.sub_1{
-    position: relative;
-    width: 342px;
-    top: -20px;
-    height: 4px;
-    background: #0072CE;
-}
-
-.sub_2{
-    position: relative;
-    width: 154px;
-    top: -20px;
-    height: 4px;
-    background: #0072CE;
-}
-
-.sub_3{
-    position: relative;
-    width: 290px;
-    top: -20px;
-    height: 4px;
-    background: #0072CE;
-}
-
-/* Box colores */
-
 
 .gray-box{
 
@@ -175,6 +139,7 @@ h1 .blue-text{
     color:#000000;
     font-weight: bold;
 }
+
 
 
 .gray-box .gray-box_content .info-box .content-box {
@@ -238,39 +203,65 @@ h1 .blue-text{
 }
 
 
-/* Containers colors */
-
-.gray-container{
- background: #f2f2f2;
- padding: 10px 30px;
- position: relative;
- width: 45%;
- border-radius: 9px;
- top:15px;
-}
-
-.blue-container{
-background: #0072CE;
-padding: 20px 30px;
-color: #ffffff;
-border-radius: 12px;
-}
-.blue-container p{
-    color: #ffffff;
-    text-align: start;
-}
-
-
-
-
-
-.end-section{
+.gray-box_content p.blue-text-content{
+    color: #0072CE;
+    padding: 0px 45px;
+    position: relative;
+    top:10px;
     text-align: center;
 }
-.end-section .images-content{
-    display: flex;
-    justify-content: space-between;
+
+
+.gray-container{
+    background: #f2f2f2;
+    padding: 10px 30px;
+    position: relative;
+    width: 45%;
+    border-radius: 9px;
+    top:15px;
+   }
+   
+   .blue-container{
+   background: #0072CE;
+   padding: 20px 30px;
+   color: #ffffff;
+   border-radius: 12px;
+   }
+   .blue-container p{
+       color: #ffffff;
+       text-align: start;
+   }
+   
+
+
+/* blue Underline text */
+
+.sub_1{
+    position: relative;
+    width: 342px;
+    top: -20px;
+    height: 4px;
+    background: #0072CE;
 }
+
+.sub_2{
+    position: relative;
+    width: 154px;
+    top: -20px;
+    height: 4px;
+    background: #0072CE;
+}
+
+.sub_3{
+    position: relative;
+    width: 290px;
+    top: -20px;
+    height: 4px;
+    background: #0072CE;
+}
+
+
+
 
 
 ul.list_items li{
@@ -329,53 +320,86 @@ ul.list_items li p{
     min-height: 43.8px;
 }
 
+
+/*############################################################
+###########  END styles in  sections MAIN ###############
+############################################################*/
+
+
+/*############################################################
+###########   styles in  sections END SECTION ###############
+############################################################*/
+
+
 .end-section p{
     color: #0072CE;
     padding: 0 20px;
 }
 
+.end-section .images-content{
+    display: flex;
+    justify-content: space-between;
+}
 
-/* Resposive mobile */
+
+
+.end-section{
+    text-align: center;
+}
+
+
+
+/*############################################################
+###########  END styles in  sections END SECTION #############
+############################################################*/
+
+
+
+
+/*############################################################
+##################   Resposive mobile  #######################
+############################################################*/
+
 @media (max-width: 375px)
 {
-    .container h1{
+    .content_page h1{
         font-size: 14px!important;
     }
 }
 
 @media (max-width: 575px)
 {
-    .container
+    .content_page
     {
         max-width: 90%;
     }
 
 
-    .container h1{
+    .content_page h1{
         font-size: 19px!important;
     }
 
-    .container .title-container img {
+    .content_page .title-container img {
         width: 40px;
         height: 45px;
         position: relative;
         top:12px;
     }
 
-    .container p {
+    .content_page p {
         font-size: 14px;
     }
 
-    .container .info-head-page p {
+    .content_page .info-head-page p {
         padding: 0 15px;
     }
 
-    .container h2 {
+    .content_page h2 {
         font-size: 20px;
         text-align: center;
     }
 
-    .container .image-head-page img {
+    .content_page .image-head-page img {
         width: 70%;
     }
     
@@ -383,13 +407,13 @@ ul.list_items li p{
 
 @media (max-width: 670px)
 {
-    .container
+    .content_page
     {
         
         max-width: 645px;
     }
 
-    .container h2 {
+    .content_page h2 {
         font-size: 25px;
         text-align: center;
     }
@@ -400,7 +424,7 @@ ul.list_items li p{
 @media (max-width: 768px)
 {
 
-    .container
+    .content_page
     {
         grid-template-columns: repeat(1,1fr); 
         grid-template-areas:"title-container title-container" 
@@ -411,11 +435,11 @@ ul.list_items li p{
 
     }
 
-    .container h1{
+    .content_page h1{
         font-size: 25px;
     }
 
-    .container .info-head-page{
+    .content_page .info-head-page{
         text-align: center;
     }
 
@@ -426,11 +450,11 @@ ul.list_items li p{
     }
 
 
-    .container .title-container h1{
-        padding: 0 0 0 1rem;
+    .content_page .title-container h1{
+        padding: 0 0 0 1reFm;
     }
 
-    .container h2 {
+    .content_page .main-sections section h2 {
         font-size: 20px;
         text-align: center;
     }
@@ -465,7 +489,7 @@ ul.list_items li p{
         min-width: 62px;
     }
 
-    .container .image-head-page img {
+    .content_page .image-head-page img {
         width: 60%;
         position:initial;
     }
@@ -554,11 +578,11 @@ ul.list_items li p{
 
 @media (max-width: 991px)
 {
-    .container
+    .content_page
     {
         max-width: 90%;
     }
-    .container h1{
+    .content_page h1{
         font-size: 25px;
     }
     .gray-box .gray-box_content .info-box .content-box {
@@ -609,43 +633,64 @@ ul.list_items li p{
 }
 @media (min-width: 992px)
 {
-    .container
+    .content_page
     {
         max-width: 85%;
     }
 
-    .container h1{
+    .content_page h1{
         font-size: 25px;
     }
     .gray-box .gray-box_content .info-box .white-box p{padding: 0 50px 0 0;}
 
 }
-@media (min-width: 1200px)
+@media (min-width: 1280px)
 {
-    .container
+    .content_page
     {
         max-width: 1160px;
     }
 
-    .container h1{
+    .content_page h1{
         font-size: 30px;
     }
     .gray-box .gray-box_content .info-box .white-box p{padding: 0 30px 0 0;}
 }
 
-
-@media (min-width: 1900px)
+@media (min-width: 1400px)
 {
-    .container
+    .content_page
     {
         max-width: 1200px;
     }
 
-    .container h1 {
+    .gray-box .gray-box_content .info-box .white-box p{
+        font-size: 17px;
+    }
+
+    .gray-box .gray-box_content .info-box .blue-box p{
+        font-size: 27px;
+    }
+}
+
+
+@media (min-width: 1900px)
+{
+    .content_page
+    {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .content_page h1 {
         font-size: 40px;
     }
 
-    .container p {
+    .content_page p {
         font-size: 19px;
     }}
 
+/*############################################################
+################# En Resposive mobile  #######################
+############################################################*/
