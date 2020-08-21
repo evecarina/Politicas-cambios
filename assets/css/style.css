@@ -740,7 +740,7 @@ ul.list_items li p {
         'image-head-page image-head-page'
         'info-head-page info-head-page'
         'main main';
-    /* max-width: 100%; */
+    max-width: 100%;
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 1024px) {
